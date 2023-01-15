@@ -87,7 +87,7 @@ git clone --depth 1 https://github.com/gdck/luci-app-cupsd cupsd1 && mv -n cupsd
 git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/peter-tank/luci-app-fullconenat
 git clone --depth 1 https://github.com/sundaqiang/openwrt-packages && mv -n openwrt-packages/luci-* ./; rm -rf openwrt-packages
-git clone --depth 1 https://github.com/zxlhhyccc/luci-app-v2raya
+#git clone --depth 1 https://github.com/zxlhhyccc/luci-app-v2raya
 git clone --depth 1 https://github.com/kenzok8/luci-theme-ifit ifit && mv -n ifit/luci-theme-ifit ./;rm -rf ifit
 git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
 git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
@@ -106,6 +106,7 @@ git clone --depth 1 https://github.com/Huangjoe123/luci-app-eqos
 git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky
 git_clone https://github.com/Hyy2001X/AutoBuild-Packages && mvdir AutoBuild-Packages
 git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
+git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
@@ -138,7 +139,7 @@ svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn export https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest/trunk/applications/luci-app-cloudflarespeedtest
 svn export https://github.com/doushang/luci-app-shortcutmenu/trunk/luci-app-shortcutmenu
 svn export https://github.com/Ysurac/openmptcprouter-feeds/trunk/luci-app-iperf
-svn export https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest
+#svn export https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest
 svn export https://github.com/sbilly/netmaker-openwrt/trunk/netmaker
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
@@ -155,7 +156,8 @@ svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 #admin/bpytop libs/jpcre2 libs/wxbase libs/rapidjson libs/libcron libs/quickjspp libs/toml11 \
 #utils/cpulimit utils/filebrowser
 
-git_sparse_clone master "https://github.com/immortalwrt/packages" "immpack" utils/filebrowser
+git_sparse_clone master "https://github.com/immortalwrt/packages" "immpack" utils/filebrowser \
+net/cdnspeedtest
 
 git_sparse_clone develop "https://github.com/Ysurac/openmptcprouter-feeds" "enmptcp" luci-app-snmpd \
 luci-app-packet-capture luci-app-mail msmtp
