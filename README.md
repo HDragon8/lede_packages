@@ -1,15 +1,5 @@
-![noodles github stats](https://github-readme-stats.vercel.app/api?username=HDragon8&show_icons=true&theme=merko)
-<div align="center">
-<h1 align="center">同步上游分支代码</h1>
-<img src="https://img.shields.io/github/issues/HDragon8/led_packages?color=green">
-<img src="https://img.shields.io/github/stars/HDragon8/led_packages?color=yellow">
-<img src="https://img.shields.io/github/forks/HDragon8/led_packages?color=orange">
-<img src="https://img.shields.io/github/license/HDragon8/led_packages?color=ff69b4">
-<img src="https://img.shields.io/github/languages/code-size/HDragon8/led_packages?color=blueviolet">
-</div>
 
-
-#### led_packages
+#### openwrt_packages
 
 *  复制自kenzok8：https://github.com/kenzok8
 
