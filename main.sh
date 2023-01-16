@@ -106,7 +106,8 @@ git clone --depth 1 https://github.com/Huangjoe123/luci-app-eqos
 git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky
 git_clone https://github.com/Hyy2001X/AutoBuild-Packages && mvdir AutoBuild-Packages
 git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
-git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
+#git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
+git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
