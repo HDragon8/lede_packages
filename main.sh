@@ -126,7 +126,7 @@ svn export https://github.com/x-wrt/luci/trunk/applications/luci-app-nft-qos
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-diskman
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/vsftpd-alt
 #svn export https://github.com/messense/aliyundrive-fuse/trunk/openwrt && mvdir openwrt
-svn export https://github.com/messense/openwrt-wiretrustee/trunk/wiretrustee
+#svn export https://github.com/messense/openwrt-wiretrustee/trunk/wiretrustee
 #svn export https://github.com/messense/aliyundrive-webdav/trunk/openwrt aliyundrive && mvdir aliyundrive
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-bypass
 #svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot
