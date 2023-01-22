@@ -46,7 +46,7 @@
 2. 或者添加下面代码到feeds.conf.default文件
 
 ```bash
- src-git small8 https://github.com/HDragon8/led_packages
+ src-git hdragon8 https://github.com/HDragon8/led_packages
 ```
 3. lede/下运行 或者openwrt/下运行
 
