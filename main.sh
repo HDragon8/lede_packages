@@ -49,7 +49,7 @@ git clone --depth 1 https://github.com/project-lede/luci-app-godproxy
 git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alist
 git clone --depth 1 https://github.com/tty228/luci-app-serverchan
 git clone --depth 1 https://github.com/4IceG/luci-app-sms-tool smstool && mvdir smstool
-git clone --depth 1 https://github.com/silime/luci-app-xunlei
+#git clone --depth 1 https://github.com/silime/luci-app-xunlei
 git clone --depth 1 https://github.com/BCYDTZ/luci-app-UUGameAcc
 #git clone --depth 1 https://github.com/ntlf9t/luci-app-easymesh
 #git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
@@ -145,6 +145,9 @@ svn export https://github.com/sbilly/netmaker-openwrt/trunk/netmaker
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 #svn export https://github.com/immortalwrt/packages/trunk/multimedia/UnblockNeteaseMusic
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-timewol
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei
 
 #git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
 #multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
