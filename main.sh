@@ -106,13 +106,9 @@ git_clone https://github.com/Hyy2001X/AutoBuild-Packages && mvdir AutoBuild-Pack
 git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
 #git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
-git_clone https://github.com/haiibo/luci-app-onliner
 
 #git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 #git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
-#svn export https://github.com/linkease/istore-packages/trunk/luci-app-LingTiGameAcc
-
-git_sparse_clone LingTiGameAcc "https://github.com/linkease/istore-packages" "LingTi" LingTiGameAcc luci-app-LingTiGameAcc
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
@@ -173,16 +169,23 @@ git_sparse_clone develop "https://github.com/Ysurac/openmptcprouter-feeds" "enmp
 luci-app-packet-capture luci-app-mail msmtp
 git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" natflow lua-ipops luci-app-macvlan
 
+rm -rf LingTiGameAcc
+rm -rf luci-app-LingTiGameAcc
+git_sparse_clone LingTiGameAcc "https://github.com/linkease/istore-packages" "LingTi" LingTiGameAcc luci-app-LingTiGameAcc
 #git_sparse_clone openwrt-21.02 "https://github.com/openwrt/openwrt" "21openwrt" package/libs/mbedtls \
 #git_sparse_clone openwrt-21.02 "https://github.com/openwrt/packages" "21packages" \
 #net/openvpn utils/cgroupfs-mount utils/coremark net/xray-core net/nginx net/uwsgi net/ddns-scripts admin/netdata
 #git_sparse_clone openwrt-21.02 "https://github.com/openwrt/openwrt" "21openwrt" package/libs/mbedtls \
+
+rm -rf luci-app-onliner
+git_clone https://github.com/haiibo/luci-app-onliner
 
 mv -n openwrt-passwall/* ./ ; rm -Rf openwrt-passwall
 mv -n openwrt-package/* ./ ; rm -Rf openwrt-package
 
 rm -rf ./*/.git & rm -f ./*/.gitattributes
 rm -rf ./*/.svn & rm -rf ./*/.github & rm -rf ./*/.gitignore
+rm -rf luci-app-netdata
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\)?include $(TOPDIR)/feeds/packages/\1?' \
