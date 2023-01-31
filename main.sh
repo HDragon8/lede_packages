@@ -17,7 +17,7 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-git clone --depth 1 https://github.com/kiddin9/my-packages && mvdir my-packages
+#git clone --depth 1 https://github.com/kiddin9/my-packages && mvdir my-packages
 #git clone --depth 1 https://github.com/kiddin9/openwrt-bypass && mvdir openwrt-bypass
 #git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
 #git clone --depth 1 https://github.com/kiddin9/aria2
@@ -28,7 +28,7 @@ git clone --depth 1 -b 18.06 https://github.com/kiddin9/luci-theme-edge
 #git clone --depth 1 https://github.com/kiddin9/openwrt-openvpn && mvdir openwrt-openvpn
 #git clone --depth 1 https://github.com/kiddin9/luci-app-xlnetacc
 git clone --depth 1 https://github.com/kiddin9/openwrt-amule-dlp && mvdir openwrt-amule-dlp
-git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
+#git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
 git clone --depth 1 https://github.com/Lienol/openwrt-package
@@ -39,7 +39,7 @@ git clone --depth 1 https://github.com/BoringCat/luci-app-minieap
 git clone --depth 1 https://github.com/peter-tank/luci-app-dnscrypt-proxy2
 git clone --depth 1 https://github.com/peter-tank/luci-app-autorepeater
 git clone --depth 1 https://github.com/rufengsuixing/luci-app-autoipsetadder
-git clone --depth 1 https://github.com/ElvenP/luci-app-onliner
+#git clone --depth 1 https://github.com/ElvenP/luci-app-onliner
 git clone --depth 1 https://github.com/rufengsuixing/luci-app-usb3disable
 git clone --depth 1 https://github.com/riverscn/openwrt-iptvhelper && mvdir openwrt-iptvhelper
 git clone --depth 1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
@@ -50,13 +50,11 @@ git clone --depth 1 https://github.com/sbwml/openwrt-alist && mvdir openwrt-alis
 git clone --depth 1 https://github.com/tty228/luci-app-serverchan
 git clone --depth 1 https://github.com/4IceG/luci-app-sms-tool smstool && mvdir smstool
 #git clone --depth 1 https://github.com/silime/luci-app-xunlei
-git clone --depth 1 https://github.com/BCYDTZ/luci-app-UUGameAcc
+#git clone --depth 1 https://github.com/BCYDTZ/luci-app-UUGameAcc
 #git clone --depth 1 https://github.com/ntlf9t/luci-app-easymesh
 #git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
 git clone --depth 1 https://github.com/shanglanxin/luci-app-homebridge
 git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
-git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
-git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
 #git clone --depth 1 https://github.com/brvphoenix/luci-app-wrtbwmon wrtbwmon1 && mvdir wrtbwmon1
 #git clone --depth 1 https://github.com/brvphoenix/wrtbwmon wrtbwmon2 && mvdir wrtbwmon2
 #git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
@@ -67,7 +65,7 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone --depth 1 https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-theme-opentopd
-git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
+#git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
 git clone --depth 1 https://github.com/sirpdboy/luci-app-poweroffdevice
 git clone --depth 1 https://github.com/sirpdboy/luci-app-autotimeset
 git clone --depth 1 https://github.com/KFERMercer/luci-app-tcpdump
@@ -90,8 +88,8 @@ git clone --depth 1 https://github.com/sundaqiang/openwrt-packages && mv -n open
 #git clone --depth 1 https://github.com/zxlhhyccc/luci-app-v2raya
 git clone --depth 1 https://github.com/kenzok8/luci-theme-ifit ifit && mv -n ifit/luci-theme-ifit ./;rm -rf ifit
 git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
-git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
-git clone --depth 1 https://github.com/kenzok78/luci-app-argonne-config
+#git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
+#git clone --depth 1 https://github.com/kenzok78/luci-app-argonne-config
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
@@ -109,6 +107,12 @@ git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
 #git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 git_clone https://github.com/haiibo/luci-app-onliner
+
+#git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
+#git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
+#svn export https://github.com/linkease/istore-packages/trunk/luci-app-LingTiGameAcc
+
+git_sparse_clone LingTiGameAcc "https://github.com/linkease/istore-packages" "LingTi" LingTiGameAcc luci-app-LingTiGameAcc
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
