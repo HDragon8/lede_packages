@@ -149,7 +149,7 @@ svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-timewol
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei
-svn export https://github.com/openwrtcompileshell/OpenwrtCompileScript/trunk/Warehouse
+svn export https://github.com/HDragon8/OpenwrtCompileScript/trunk/Warehouse
 
 #git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
 #multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
