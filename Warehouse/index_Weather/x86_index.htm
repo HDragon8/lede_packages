@@ -51,7 +51,7 @@
 		local eth_info = luci.sys.exec("ethinfo")
 
 		local user_info = luci.sys.exec("cat /proc/net/arp | grep '0x2' | wc -l") or 0
-
+		
 		local cpu_usage = (luci.sys.exec("expr 100 - $(top -n 1 | grep 'CPU:' | awk -F '%' '{print$4}' | awk -F ' ' '{print$2}')") or "6") .. "%"
 
 		local rv = {
@@ -156,7 +156,7 @@
 			if (ht)  s += ', MCS %s'.format(mcs);
 			if (sgi) s += ', <%:Short GI%>';
 		}
-
+		
 		if (he) {
 			s += ', HE-MCS %d'.format(mcs);
 			if (nss) s += ', HE-NSS %d'.format(nss);
@@ -748,7 +748,7 @@
 		<tr><td width="33%"><%:Uptime%></td><td id="uptime">-</td></tr>
 		<tr><td width="33%"><%:Load Average%></td><td id="loadavg">-</td></tr>
 		<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>
-		<tr><td width="33%"><%:Compile_time %></td><td><%=luci.sys.exec("cat /etc/Compile_time") or " "%></td></tr>
+		<tr><td width="33%"><%:Compile_noodles %></td><td><%=luci.sys.exec("cat /etc/Compile_noodles") or " "%></td></tr>
 
 	</table>
 </fieldset>
