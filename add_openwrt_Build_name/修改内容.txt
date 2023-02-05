@@ -5,7 +5,7 @@
 
 2、ARM-index.htm
 
- rm -rf package/lean/autocore/files/x86/index.htm
+ rm -rf package/lean/autocore/files/arm/index.htm
  cp feeds/xxx/arm_index package/lean/autocore/files/arm/index.htm
 
  3、luci-mod-admin-full-index.htm
