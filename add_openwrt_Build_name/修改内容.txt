@@ -6,12 +6,12 @@
 2、ARM-index.htm
 
  rm -rf package/lean/autocore/files/arm/index.htm
- cp feeds/xxx/arm_index package/lean/autocore/files/arm/index.htm
+ cp feeds/xxx/arm_index.htm package/lean/autocore/files/arm/index.htm
 
  3、luci-mod-admin-full-index.htm
 
  rm -rf feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
- cp feeds/xxx/luci-mod-admin-full_index feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+ cp feeds/xxx/luci-mod-admin-full_index.htm feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
  #添加翻译：
   sed -i '$a \#首页显示编译者\nmsgid "Compile_noodles"\nmsgstr "固件编译者"\n' package/lean/default-settings/po/zh-cn/default.po
