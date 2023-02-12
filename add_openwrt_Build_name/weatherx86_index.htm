@@ -749,8 +749,18 @@
 		<tr><td width="33%"><%:Load Average%></td><td id="loadavg">-</td></tr>
 		<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>
 		<tr><td width="33%"><%:Compile_noodles %></td><td><%=luci.sys.exec("cat /etc/Compile_noodles") or " "%></td></tr>
+
 	</table>
 </fieldset>
+
+<fieldset class="cbi-section">
+	<legend><%:Weather%></legend>
+
+	<table width="100%" cellspacing="10">
+		<tr><td width="33%"><%:Local Weather%></td><td > <iframe width="800" scrolling="no" height="120" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=19&icon=3&temp=1&num=5&site=12"></iframe>	
+	</table>
+</fieldset>
+
 
 <fieldset class="cbi-section">
 	<legend><%:Memory%></legend>
