@@ -92,7 +92,7 @@ git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
 #git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
 #git clone --depth 1 https://github.com/kenzok78/luci-app-argonne-config
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
-#git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
+git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
 git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/{network/services/*,multimedia/*} ./; rm -rf nas-packages
@@ -103,7 +103,7 @@ git clone --depth 1 https://github.com/ZeaKyX/luci-app-speedtest-web
 git clone --depth 1 https://github.com/ZeaKyX/speedtest-web
 git clone --depth 1 https://github.com/Huangjoe123/luci-app-eqos
 git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky
-git_clone https://github.com/Hyy2001X/AutoBuild-Packages && mvdir AutoBuild-Packages
+git clone --depth 1 https://github.com/Hyy2001X/AutoBuild-Packages && rm -rf AutoBuild-Packages/luci-app-adguardhome && mvdir AutoBuild-Packages
 git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
 #git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
@@ -122,6 +122,8 @@ svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-
 svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-cos/trunk/tencentcloud_cos luci-app-tencentcloud-cos
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-atmaterial_new
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-mcat
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-tomato
@@ -188,7 +190,7 @@ mv -n openwrt-package/* ./ ; rm -Rf openwrt-package
 
 rm -rf ./*/.git & rm -f ./*/.gitattributes
 rm -rf ./*/.svn & rm -rf ./*/.github & rm -rf ./*/.gitignore
-rm -rf luci-app-netdata
+#rm -rf luci-app-netdata
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\)?include $(TOPDIR)/feeds/packages/\1?' \
@@ -209,6 +211,9 @@ sed -i 's/	ip.neighbors/	luci.ip.neighbors/' luci-app-wifidog/luasrc/model/cbi/w
 sed -i "s/nas/services/g" `grep nas -rl luci-app-fileassistant`
 sed -i "s/NAS/Services/g" `grep NAS -rl luci-app-fileassistant`
 find -type f -name Makefile -exec sed -ri  's#mosdns[-_]neo#mosdns#g' {} \;
+
+rm -rf luci-app-adguardhome/po/zh_Hans
+cp -Rf luci-app-adguardhome/po/zh-cn luci-app-adguardhome/po/zh_Hans
 
 bash diy/create_acl_for_luci.sh -a >/dev/null 2>&1
 bash diy/convert_translation.sh -a >/dev/null 2>&1
