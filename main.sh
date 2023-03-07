@@ -65,6 +65,7 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone --depth 1 https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-theme-opentopd
+git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
 #git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
 git clone --depth 1 https://github.com/sirpdboy/luci-app-poweroffdevice
 git clone --depth 1 https://github.com/sirpdboy/luci-app-autotimeset
@@ -91,7 +92,7 @@ git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
 #git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
 #git clone --depth 1 https://github.com/kenzok78/luci-app-argonne-config
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
-git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
+#git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
 git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/{network/services/*,multimedia/*} ./; rm -rf nas-packages
@@ -107,8 +108,8 @@ git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
 #git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 git_clone https://github.com/HDragon8/add_openwrt_Build_name
-git clone https://github.com/gngpp/luci-app-design-config
-
+git clone --depth 1 https://github.com/gngpp/luci-app-design-config
+git clone --depth 1 https://github.com/gngpp/luci-theme-design
 #git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 #git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
 
@@ -119,8 +120,8 @@ svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-alidd
 #svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns luci-app-tencentddns
 svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-cos/trunk/tencentcloud_cos luci-app-tencentcloud-cos
-svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome
-svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
+#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome
+#svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-atmaterial_new
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-mcat
 svn export https://github.com/kenzok8/litte/trunk/luci-theme-tomato
