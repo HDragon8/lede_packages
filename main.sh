@@ -107,6 +107,7 @@ git_clone https://github.com/sirpdboy/luci-app-ddns-go ddns-go && mvdir ddns-go
 #git_clone https://github.com/sirpdboy/netspeedtest && mv -n netspeedtest/luci-app-netspeedtest ./ ; rm -rf netspeedtest
 git_clone https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 git_clone https://github.com/HDragon8/add_openwrt_Build_name
+git clone https://github.com/gngpp/luci-app-design-config
 
 #git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 #git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
