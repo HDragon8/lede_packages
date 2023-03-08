@@ -29,7 +29,7 @@ git clone --depth 1 -b 18.06 https://github.com/kiddin9/luci-theme-edge
 #git clone --depth 1 https://github.com/kiddin9/luci-app-xlnetacc
 git clone --depth 1 https://github.com/kiddin9/openwrt-amule-dlp && mvdir openwrt-amule-dlp
 #git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
-#git clone --depth 1 https://github.com/yichya/luci-app-xray
+git clone --depth 1 https://github.com/yichya/luci-app-xray
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
 git clone --depth 1 https://github.com/Lienol/openwrt-package
 git clone --depth 1 https://github.com/ysc3839/openwrt-minieap
@@ -183,7 +183,8 @@ git_sparse_clone LingTiGameAcc "https://github.com/linkease/istore-packages" "Li
 #git_sparse_clone openwrt-21.02 "https://github.com/openwrt/openwrt" "21openwrt" package/libs/mbedtls \
 
 rm -rf luci-app-onliner
-git_clone https://github.com/haiibo/luci-app-onliner
+#git_clone https://github.com/haiibo/luci-app-onliner
+git clone --depth 1 https://github.com/ElvenP/luci-app-onliner
 
 mv -n openwrt-passwall/* ./ ; rm -Rf openwrt-passwall
 mv -n openwrt-package/* ./ ; rm -Rf openwrt-package
