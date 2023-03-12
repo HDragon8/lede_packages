@@ -115,7 +115,8 @@ git clone --depth 1 https://github.com/gngpp/luci-app-design-config
 git clone --depth 1 https://github.com/gngpp/luci-theme-design
 #git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 #git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
-git clone --depth 1 -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+#git clone --depth 1 -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 git clone --depth 1 https://github.com/AlexZhuo/luci-app-bandwidthd
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
@@ -157,7 +158,7 @@ svn export https://github.com/sbilly/netmaker-openwrt/trunk/netmaker
 svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 #svn export https://github.com/immortalwrt/packages/trunk/multimedia/UnblockNeteaseMusic
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-timewol
-svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic
+#svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav
 svn export https://github.com/immortalwrt/packages/trunk/net/gowebdav
