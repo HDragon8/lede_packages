@@ -23093,6 +23093,7 @@ qiangyou.org
 qienkuen.org
 qieyz.com
 qinav.com
+qingenporn.net
 qingpeng.org
 qingse.one
 qingyangmovie.be
@@ -24930,6 +24931,7 @@ sixdollarclick.com
 sixpackshortcuts.com
 sixth.biz
 sj
+sjcollect.com
 sjg117.com
 sjhs.pw
 sjhs02.com
@@ -26840,6 +26842,7 @@ tj900.com
 tjmaxx
 tjmaxx.com
 tjsbfj.com
+tjstats.com
 tjx
 tk
 tkb008.xyz
@@ -28801,6 +28804,7 @@ vtvan.com
 vu
 vudu.com
 vuku.cc
+vulgarx.com
 vultr.com
 vultryhw.com
 vultur.com
@@ -35270,6 +35274,7 @@ full:zeenews-fonts.s3.amazonaws.com
 regexp:(^|\.)783([a-z][a-z]?)?\.tv$
 regexp:(^|\.)8dgo[1-57-9]\.com$
 regexp:(^|\.)91porn[0-9]{3}\.me$
+regexp:(^|\.)91p[1-9][0-9]?\.com$
 regexp:(^|\.)989[a-z]?\.tv$
 regexp:(^|\.)99pp[1-9][0-9]\.com$
 regexp:(^|\.)avstar0[1-9]\.(com|me)$
