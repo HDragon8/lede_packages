@@ -1,4 +1,3 @@
-
 #!/bin/bash
 function git_clone() {
   git clone --depth 1 $1 $2 || true
@@ -30,7 +29,9 @@ git clone --depth 1 -b 18.06 https://github.com/kiddin9/luci-theme-edge
 git clone --depth 1 https://github.com/kiddin9/openwrt-amule-dlp && mvdir openwrt-amule-dlp
 #git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
 git clone --depth 1 https://github.com/yichya/luci-app-xray
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
+#git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall && mvdir openwrt-passwall
+git clone --depth 1 https://github.com/fw876/helloworld && mvdir helloworld
 git clone --depth 1 https://github.com/Lienol/openwrt-package
 git clone --depth 1 https://github.com/ysc3839/openwrt-minieap
 git clone --depth 1 https://github.com/ysc3839/luci-proto-minieap
@@ -65,8 +66,9 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone --depth 1 https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-theme-opentopd
-git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
+#git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
 #git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
+git clone --depth 1 https://github.com/HDragon8/luci-app-netdata
 git clone --depth 1 https://github.com/sirpdboy/luci-app-poweroffdevice
 git clone --depth 1 https://github.com/sirpdboy/luci-app-autotimeset
 git clone --depth 1 https://github.com/KFERMercer/luci-app-tcpdump
@@ -95,6 +97,7 @@ git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
 git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/{network/services/*,multimedia/*} ./; rm -rf nas-packages
 git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/* ./; rm -rf nas-packages-luci
 git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
@@ -112,6 +115,8 @@ git clone --depth 1 https://github.com/gngpp/luci-app-design-config
 git clone --depth 1 https://github.com/gngpp/luci-theme-design
 #git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 #git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
+git clone --depth 1 -b master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+git clone --depth 1 https://github.com/AlexZhuo/luci-app-bandwidthd
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fileassistant
@@ -136,11 +141,11 @@ svn export https://github.com/x-wrt/luci/trunk/applications/luci-app-nft-qos
 #svn export https://github.com/messense/aliyundrive-webdav/trunk/openwrt aliyundrive && mvdir aliyundrive
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-bypass
 #svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot
-svn export https://github.com/fw876/helloworld/trunk/sagernet-core
-svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
-svn export https://github.com/fw876/helloworld/trunk/lua-neturl
-svn export https://github.com/fw876/helloworld/trunk/redsocks2
-svn export https://github.com/fw876/helloworld/trunk/microsocks
+#svn export https://github.com/fw876/helloworld/trunk/sagernet-core
+#svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
+#svn export https://github.com/fw876/helloworld/trunk/lua-neturl
+#svn export https://github.com/fw876/helloworld/trunk/redsocks2
+#svn export https://github.com/fw876/helloworld/trunk/microsocks
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 #svn export https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman
 svn export https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest/trunk/applications/luci-app-cloudflarespeedtest
@@ -148,24 +153,14 @@ svn export https://github.com/doushang/luci-app-shortcutmenu/trunk/luci-app-shor
 svn export https://github.com/Ysurac/openmptcprouter-feeds/trunk/luci-app-iperf
 #svn export https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest
 svn export https://github.com/sbilly/netmaker-openwrt/trunk/netmaker
-svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
+#svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 svn export https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 #svn export https://github.com/immortalwrt/packages/trunk/multimedia/UnblockNeteaseMusic
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-timewol
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei
-#svn export https://github.com/HDragon8/OpenwrtCompileScript/trunk/Warehouse
-
-#git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
-#multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
-#net/qBittorrent-static net/qBittorrent libs/qtbase libs/qttools libs/rblibtorrent \
-#net/uugamebooster net/verysync net/dnsforwarder net/nps net/microsocks net/tcpping net/redsocks2
-
-#git_sparse_clone master "https://github.com/immortalwrt/packages" "immpack" net/sub-web \
-#net/smartdns net/dnsproxy net/haproxy net/v2raya net/cdnspeedtest \
-#net/subconverter net/ngrokc net/oscam net/njitclient net/scutclient net/gost net/gowebdav \
-#admin/bpytop libs/jpcre2 libs/wxbase libs/rapidjson libs/libcron libs/quickjspp libs/toml11 \
-#utils/cpulimit utils/filebrowser
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav
+svn export https://github.com/immortalwrt/packages/trunk/net/gowebdav
 
 git_sparse_clone master "https://github.com/immortalwrt/packages" "immpack" utils/filebrowser \
 net/cdnspeedtest
@@ -177,10 +172,6 @@ git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" natflow lua
 rm -rf LingTiGameAcc
 rm -rf luci-app-LingTiGameAcc
 git_sparse_clone LingTiGameAcc "https://github.com/linkease/istore-packages" "LingTi" LingTiGameAcc luci-app-LingTiGameAcc
-#git_sparse_clone openwrt-21.02 "https://github.com/openwrt/openwrt" "21openwrt" package/libs/mbedtls \
-#git_sparse_clone openwrt-21.02 "https://github.com/openwrt/packages" "21packages" \
-#net/openvpn utils/cgroupfs-mount utils/coremark net/xray-core net/nginx net/uwsgi net/ddns-scripts admin/netdata
-#git_sparse_clone openwrt-21.02 "https://github.com/openwrt/openwrt" "21openwrt" package/libs/mbedtls \
 
 rm -rf luci-app-onliner
 #git_clone https://github.com/haiibo/luci-app-onliner
@@ -211,15 +202,15 @@ sed -i 's/ +uhttpd-mod-ubus//' luci-app-packet-capture/Makefile
 sed -i 's/	ip.neighbors/	luci.ip.neighbors/' luci-app-wifidog/luasrc/model/cbi/wifidog/wifidog_cfg.lua
 sed -i "s/nas/services/g" `grep nas -rl luci-app-fileassistant`
 sed -i "s/NAS/Services/g" `grep NAS -rl luci-app-fileassistant`
-find -type f -name Makefile -exec sed -ri  's#mosdns[-_]neo#mosdns#g' {} \;
+#find -type f -name Makefile -exec sed -ri  's#mosdns[-_]neo#mosdns#g' {} \;
 
 rm -rf luci-app-adguardhome/po/zh_Hans
 cp -Rf luci-app-adguardhome/po/zh-cn luci-app-adguardhome/po/zh_Hans
 
-bash diy/create_acl_for_luci.sh -a >/dev/null 2>&1
-bash diy/convert_translation.sh -a >/dev/null 2>&1
+#bash diy/create_acl_for_luci.sh -a >/dev/null 2>&1
+#bash diy/convert_translation.sh -a >/dev/null 2>&1
 
-rm -rf create_acl_for_luci.err & rm -rf create_acl_for_luci.ok
-rm -rf create_acl_for_luci.warn
+#rm -rf create_acl_for_luci.err & rm -rf create_acl_for_luci.ok
+#rm -rf create_acl_for_luci.warn
 
 exit 0
